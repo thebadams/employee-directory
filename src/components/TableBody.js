@@ -1,16 +1,11 @@
 import React from 'react';
+import TableRow from './TableRow'
 
 const TableBody = () => {
   return (
      <tbody>
-        <tr>
-          <td>Column 1:1</td>
-          <td>Column 1:2</td>
-        </tr>
-        <tr>
-          <td>Column 2:1</td>
-          <td>Column 2:2</td>
-        </tr>
+       <TableRow item1="Item Column 1, 1" item2="Item Column 1,2"/>
+       <TableRow item1="Item Column 2,2" item2 = "Item Column 2,2" />
       </tbody>
   )
 }
