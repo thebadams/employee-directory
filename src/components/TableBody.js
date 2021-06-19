@@ -1,11 +1,21 @@
-import React from 'react';
+import React , { useEffect, useState }from 'react';
 import TableRow from './TableRow'
+import axios from 'axios'
 
 const TableBody = () => {
+const [users, setUsers] = useState([])
+
+useEffect(()=>{
+  const getData = async ()=> {
+    const data = await axios.get('https://randomuser.me/api/')
+    setUsers(data.data.results)
+  }
+  getData()
+}, [] )
   return (
      <tbody>
-       <TableRow item1="Item Column 1, 1" item2="Item Column 1,2" body= {true}/>
-       <TableRow item1="Item Column 2,2" item2 = "Item Column 2,2" body={true} />
+       {users.map((user) => <TableRow  item1={user.gender} body={true} />)}
+      
       </tbody>
   )
 }

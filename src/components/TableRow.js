@@ -4,8 +4,7 @@ const TableRow = (props) => {
   if (props.body) {
     return (
      <tr>
-      <td>{props.item1}</td>
-      <td>{props.item2}</td> 
+      <td onClick={()=> console.log(props.users)}>{props.item1}</td>
      </tr>
     )
 } else {
