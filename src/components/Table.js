@@ -1,14 +1,10 @@
 import React from 'react';
+import TableHeader from './TableHeader';
 
 const Table = () => {
   return (
     <table>
-      <thead>
-        <tr>
-          <th>Heading 1</th>
-          <th>Heading 2</th>
-        </tr>
-      </thead>
+     <TableHeader />
       <tbody>
         <tr>
           <td>Column 1:1</td>
