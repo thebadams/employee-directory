@@ -7,14 +7,14 @@ const [users, setUsers] = useState([])
 
 useEffect(()=>{
   const getData = async ()=> {
-    const data = await axios.get('https://randomuser.me/api/')
+    const data = await axios.get('https://randomuser.me/api/?results=5')
     setUsers(data.data.results)
   }
   getData()
 }, [] )
   return (
      <tbody>
-       {users.map((user) => <TableRow  item1={user.gender} body={true} />)}
+       {users.map((user) => <TableRow  user ={user} body={true} />)}
       
       </tbody>
   )
