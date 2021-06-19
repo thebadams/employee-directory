@@ -1,12 +1,10 @@
 import React from 'react'
+import TableRow from './TableRow'
 
 const TableHeader = () => {
   return (
      <thead>
-        <tr>
-          <th>Heading 1</th>
-          <th>Heading 2</th>
-        </tr>
+       <TableRow item1="Heading 1" item2="Heading 2" body={false} />
       </thead>
   )
 }
