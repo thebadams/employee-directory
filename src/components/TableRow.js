@@ -4,27 +4,33 @@ const TableRow = (props) => {
   if (props.body) {
     return (
      <tr>
-       <td>{props.user.name.title}</td>
-        <td>{props.user.name.first}</td>
-        <td>{props.user.name.last}</td>
-        <td> {props.user.gender}</td>
-        <td>{props.user.location.street.number}</td>
-        <td>{props.user.location.street.name}</td>
-        <td>{props.user.location.city}</td>
-        <td>{props.user.location.state}</td>
-        <td>{props.user.location.country}</td>
-        <td>{props.user.location.postcode}</td>
+       <td>{props.user.name}</td>
+        <td>{props.user.address}</td>
+        <td>{props.user.city}</td>
+        <td>{props.user.state}</td>
+        <td>{props.user.country}</td>
+        <td>{props.user.postcode}</td>
         <td>{props.user.email}</td>
         <td>{props.user.phone}</td>
         <td>{props.user.cell}</td>
-        <td>{props.user.dob.age}</td>
+        <td>{props.user.age}</td>
+         <td> {props.user.gender}</td>
      </tr>
     )
 } else {
   return (
     <tr>
-      <th>{props.item1}</th>
-      <th>{props.item2}</th> 
+      <th>Name</th>
+      <th>Address</th> 
+      <th>City</th>
+      <th>State</th>
+      <th> Country</th>
+      <th>Post Code</th>
+      <th>E-Mail</th>
+      <th>Phone #</th>
+      <th>Cell #</th>
+      <th>Age</th>
+      <th>Gender</th>
      </tr>
   )
 }
