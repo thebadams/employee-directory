@@ -4,7 +4,11 @@ const TableRow = (props) => {
   if (props.body) {
     return (
      <tr>
-       <td>{props.user.name}</td>
+      {Object.entries(props.user).map( entry=> {
+        const [key, value] = entry;
+        return <td>{value}</td>
+      })}
+       {/* <td>{props.user.name}</td>
         <td>{props.user.address}</td>
         <td>{props.user.city}</td>
         <td>{props.user.state}</td>
@@ -14,12 +18,16 @@ const TableRow = (props) => {
         <td>{props.user.phone}</td>
         <td>{props.user.cell}</td>
         <td>{props.user.age}</td>
-         <td> {props.user.gender}</td>
+         <td> {props.user.gender}</td> */}
      </tr>
     )
 } else {
   return (
     <tr>
+      {/* {Object.entries(props.user).map( entry => {
+        const [key, value] = entry;
+        return <th>{key}</th>
+      })} */}
       <th>Name</th>
       <th>Address</th> 
       <th>City</th>
