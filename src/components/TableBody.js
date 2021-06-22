@@ -29,7 +29,7 @@ useEffect(()=>{
 }, [] )
   return (
      <tbody>
-       {users.map((user) => <TableRow  user ={user} body={true} />)}
+       {users.map((user) => <TableRow  user ={user}  name={user.name} body={true} />)}
       
       </tbody>
   )

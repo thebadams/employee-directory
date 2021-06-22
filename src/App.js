@@ -1,14 +1,13 @@
 import TableComponent from './components/Table'
 import Heading from './components/Heading'
+import FormComponent from './components/FormComponent'
+import './App.css'
 
 function App() {
   return  (
     <>
     <Heading />
-    <form>
-      <input type="text" />
-      <button type="submit">Submit</button>
-    </form>
+    <FormComponent />
     <TableComponent />
     </>
     

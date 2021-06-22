@@ -3,7 +3,7 @@ import React from 'react'
 const TableRow = (props) => {
   if (props.body) {
     return (
-     <tr>
+     <tr data-name = {props.user.name}>
       {Object.entries(props.user).map( entry=> {
         const [key, value] = entry;
         return <td>{value}</td>
