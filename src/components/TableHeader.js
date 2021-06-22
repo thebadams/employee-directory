@@ -4,7 +4,7 @@ import TableRow from './TableRow'
 const TableHeader = () => {
   return (
      <thead>
-       <TableRow item1="Gender" body={false} />
+       <TableRow body={false} />
       </thead>
   )
 }

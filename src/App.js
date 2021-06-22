@@ -1,8 +1,16 @@
-import Table from './components/Table'
+import TableComponent from './components/Table'
 
 function App() {
   return  (
-    <Table />
+    <>
+    <h1>Employee Directory</h1>
+    <form>
+      <input type="text" />
+      <button type="submit">Submit</button>
+    </form>
+    <TableComponent />
+    </>
+    
   )
 }
 
