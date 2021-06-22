@@ -1,9 +1,10 @@
 import TableComponent from './components/Table'
+import Heading from './components/Heading'
 
 function App() {
   return  (
     <>
-    <h1>Employee Directory</h1>
+    <Heading />
     <form>
       <input type="text" />
       <button type="submit">Submit</button>
