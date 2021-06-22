@@ -20,7 +20,7 @@ const FormComponent = () => {
       )
   }
   return (
-    <Form>
+    <Form style= {{margin: "10px"}}>
       <Form.Group controlId="filter">
         <Form.Label>Search</Form.Label>
         <Form.Control type= "text" placeholder="Search By Name" id="filterInput"/>

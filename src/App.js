@@ -1,14 +1,15 @@
 import TableComponent from './components/Table'
 import Heading from './components/Heading'
 import FormComponent from './components/FormComponent'
+import Container from 'react-bootstrap/Container'
 
 function App() {
   return  (
-    <>
-    <Heading />
-    <FormComponent />
-    <TableComponent />
-    </>
+    <Container>
+      <Heading />
+      <FormComponent />
+      <TableComponent />
+    </Container>
     
   )
 }

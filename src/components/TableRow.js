@@ -23,7 +23,7 @@ const TableRow = (props) => {
     )
 } else {
   return (
-    <tr>
+    <tr style={props.style}>
       {/* {Object.entries(props.user).map( entry => {
         const [key, value] = entry;
         return <th>{key}</th>

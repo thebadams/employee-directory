@@ -27,7 +27,7 @@ const TableHeader = () => {
   }
   return (
      <thead>
-       <TableRow body={false} sort={handleSort}/>
+       <TableRow body={false} sort={handleSort} style={{ text: 'uppercase'}}/>
       </thead>
   )
 }

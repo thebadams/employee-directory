@@ -3,7 +3,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 
 const Heading = () => {
   return (
-    <Jumbotron>
+    <Jumbotron style= {{margin: "5px"}}>
       <h1>Employee Directory</h1>
     </Jumbotron>
   )
