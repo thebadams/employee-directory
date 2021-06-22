@@ -28,7 +28,7 @@ const TableRow = (props) => {
         const [key, value] = entry;
         return <th>{key}</th>
       })} */}
-      <th>Name</th>
+      <th onClick={props.sort}>Name</th>
       <th>Address</th> 
       <th>City</th>
       <th>State</th>
